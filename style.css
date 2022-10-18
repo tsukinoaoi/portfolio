@@ -7,11 +7,12 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background: #262626;
+ background-color: white;
 }
 .container{
     position: relative;
     width: 100%;   
+   
 }
 .container section{
     position: relative;
@@ -30,10 +31,17 @@ body{
    text-transform: uppercase;
 }
 
+
+/* diseño del menu */
 .container ul{
     position: fixed;
     top: 0;  left: 0;
-    background: #262626;
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 19.5px );
+    -webkit-backdrop-filter: blur( 19.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     width: 100%;  height: 60px;
     z-index: 10;
 }
@@ -47,9 +55,50 @@ body{
     width: 100%;  height: 100%;
     text-align: center;  line-height: 60px;
     text-decoration: none;  text-transform: uppercase;
-    color: #fff;
+    color: rgb(13, 13, 14);
 }
 .container ul li a:hover{
-    background: #ff5722;
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 19.5px );
+    -webkit-backdrop-filter: blur( 19.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 
 }
+/* **********************************************************
+animaciones
+*/
+#letter_welcome 
+{
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 2rem;
+    margin: 0 auto;
+    font-family: "Courier New";
+    border-right: 0.15em solid #18bdec;
+    animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+/* **********************************************************
+fondos
+*/
+#sec1{
+    background-image: url("images/fondosec1.svg");
+    background-repeat: no-repeat;
+}
+
