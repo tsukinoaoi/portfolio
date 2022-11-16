@@ -1,4 +1,4 @@
-/*elementos globales*/
+/**************elementos globales*******************/
 .glass{
   background: rgba( 255, 255, 255, 0.35 );
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -7,6 +7,9 @@ backdrop-filter: blur( 16px );
 border-radius: 10px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
+
+
+
 
 *{
     padding: 0;
@@ -34,8 +37,18 @@ html{
    text-transform: uppercase;
 }
 
+/**********loading **************** */
+.loading
+{
+  text-align: center;
+}
 
-/* diseño del menu */
+.loading img {
+  padding: 25%;
+}
+
+
+/***********************Diseño del menu ******************* */
 .container ul{
     position: fixed;
     top: 0;  left: 0;
@@ -69,9 +82,7 @@ html{
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 
 }
-/* **********************************************************
-animaciones
-*/
+/* ************************************animaciones********************/
 #letter_welcome 
 {
     width: 0;
@@ -98,11 +109,22 @@ animaciones
     }
   }
 
-/* **********************************************************
-seccion 1 
-*/
+  #sec1{
+    animation: myAnim 1s ease 0s 1 normal forwards;
+  }
+
+  @keyframes myAnim {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+/* **********************************seccion 1******************** */
 #sec1{
-  background: url("images/cielo.svg") no-repeat center center fixed; 
+  background: url("../images/cielo.svg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -131,9 +153,9 @@ seccion 1
 
 
 
-/*seccion 2  */
+/************************seccion 2******************************/
 #sec2{
-  background: url("images/oeste.svg") no-repeat center center fixed; 
+  background: url("../images/oeste.svg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -141,7 +163,7 @@ seccion 1
 }
 
 
-/*  ********  */
+/******************* Responsividad en dispositivos ********  */
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) 
 {
