@@ -22,13 +22,26 @@
 
  
 <div style="display:none;" id="myDiv" class="container">
-    <ul>
+   
+    <ul class="menu">
      <li><a onclick="sect1background()" href="#sec1">About me </a></li>
      <li><a onclick="sect2background()" href="#sec2">Projects</a></li>
-     <li><a href="#sec3">Contact</a></li>
+     <li><a href="#sec3">Skills</a></li>
      <li><a href="#sec4">Social</a></li>
-     <li><a href="#sec5">Feedback</a></li>
      </ul>
+
+     <div class="containermovil">
+        <input type="checkbox" id="btn-mas">
+        <div class="redes">
+            <a onclick="sect1background()" href="#sec1">about</a>
+            <a onclick="sect2background()" href="#sec2">project</a>
+            <a href="#sec3">skills</a>
+            <a href="#sec4">social</a>
+        </div>
+        <div class="btn-mas">
+            <label for="btn-mas" class="fa fa-plus"></label>
+        </div>
+    </div>
     
     <section id="sec1">
         <div class="container-fluid" style="padding-top: 100px;">
@@ -55,14 +68,16 @@
                  <div class="glass" style="width:max-content; margin-right: auto; margin-left: auto;">
                     <div class="d-flex justify-content-center">
                         <button type="button" class="btn btn-labeled btn-primary" style="margin: 10px">
-                        <span class="btn-label"><i class="fa fa-linkedin"></i></span> Linkedin</button>
+                        <a style="color: white; text-decoration: none;" href="https://www.linkedin.com/in/luis-miguel-pineda-43a574189/"> <span  class="btn-label"><i class="fa fa-envelope"></i> </span> linkedin</a>   
+                        </button>
     
                         <button type="button" class="btn btn-labeled btn-danger"style="margin: 10px">
-                         <a style="color: white; text-decoration: none;" href="https://www.linkedin.com/in/luis-miguel-pineda-43a574189/"> <span  class="btn-label"><i class="fa fa-envelope"></i> </span> Email</a>    
+                         <a style="color: white; text-decoration: none;" href="mailto:pinedacasco23@gmail.com"> <span  class="btn-label"><i class="fa fa-envelope"></i> </span> Email</a>    
                         </button>
     
                         <button type="button" class="btn btn-labeled btn-success"  style="margin: 10px">
-                        <span class="btn-label"><i class="fa fa-whatsapp"></i></span> Whatspp</button>
+                            <a style="color: white; text-decoration: none;" href="https://wa.me/+50589031585"> <span  class="btn-label"><i class="fa fa-envelope"></i> </span> whatsapp</a>    
+                        </button>
                        
                         </div>
                    </div>
@@ -88,7 +103,8 @@
             <h2>
                 We design for you
                 <small class="text-muted">
-                    The first appearance always matters. Cover design, post and more</small>
+                    
+The first impression always matters. Creation of material for social networks</small>
               </h2>
         </div>
         <div class="col-sm-2">
@@ -146,7 +162,6 @@
     
     </section>
     <section id="sec4" style="background-color: rgb(3, 3, 3)"><h1>Social</h1></section>
-    <section id="sec5"><h1>Feedback</h1></section>
 </div>
 
 
