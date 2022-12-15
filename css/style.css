@@ -8,6 +8,15 @@ border-radius: 10px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
+#vidrio
+{
+  background: rgba( 255, 255, 255, 0.35 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 16px );
+  -webkit-backdrop-filter: blur( 16px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  margin: 10px;
+}
 
 
 
@@ -122,6 +131,27 @@ html{
       opacity: 1;
     }
   }
+
+  .bird
+  {
+    z-index: 1;
+    position: absolute;
+    animation: vuelo 1s cubic-bezier(0.445, 0.050, 0.550, 0.950) infinite alternate-reverse both;
+  }
+
+  @keyframes vuelo {
+    0% {
+      transform: translateY(0);
+      
+    }
+    100% {
+      transform: translateY(-100px);
+    }
+  }
+
+
+  
+
 /* **********************************seccion 1******************** */
 #sec1{
   background: url("../images/cielo.svg") no-repeat center center fixed; 
@@ -162,6 +192,15 @@ html{
   background-size: cover;
 }
 
+/************************seccion 3******************************/
+#sec3{
+  background: url("../images/fondosec3.svg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 
 /******************* Responsividad en dispositivos ********  */
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -179,6 +218,11 @@ html{
   .menu
   {
      display: none;
+  }
+
+  #vidrio
+  {
+    margin: 0px;
   }
 
 

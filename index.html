@@ -18,6 +18,7 @@
 
     <div id="loader" class="loading">
         <img src="images/loading.svg" alt="loading">
+      
     </div>
 
  
@@ -26,7 +27,7 @@
     <ul class="menu">
      <li><a onclick="sect1background()" href="#sec1">About me </a></li>
      <li><a onclick="sect2background()" href="#sec2">Projects</a></li>
-     <li><a href="#sec3">Skills</a></li>
+     <li><a onclick="sect3background()"  href="#sec3">Skills</a></li>
      <li><a href="#sec4">Social</a></li>
      </ul>
 
@@ -35,7 +36,7 @@
         <div class="redes">
             <a onclick="sect1background()" href="#sec1">about</a>
             <a onclick="sect2background()" href="#sec2">project</a>
-            <a href="#sec3">skills</a>
+            <a onclick="sect3background()" href="#sec3">skills</a>
             <a href="#sec4">social</a>
         </div>
         <div class="btn-mas">
@@ -98,52 +99,48 @@
     </section>
     <section id="sec2">
         <div class="container-fluid" style="padding-top: 100px;">
+         <img class="bird" src="images/bird.svg" alt="bird" style="max-width: 10%">
         <div class="row">
+            <div class="col-sm-6">
+                <img src="images/rama.png" alt="bird" style="width: 80%; height: auto; position: relative; right: 11px;">
+            </div>
         <div class="col-sm-6">
-            <h2>
-                We design for you
-                <small class="text-muted">
-                    
-The first impression always matters. Creation of material for social networks</small>
-              </h2>
+            <h3>
+                I design for you
+                <small  style="color: brown;">
+                    Development of mobile applications and design of multimedia content for social networks</small>
+              </h3>
         </div>
-        <div class="col-sm-2">
-            <img class="img-fluid" src="images/bujia.png" alt="programer" style="max-width: 50%">
-            <p class="fw-bold">creative ideas</p>
-            <p class="fw-normal">latest design trends.</p>
+        <div  id="vidrio" class="col-sm-3">
+            <img class="img-fluid" src="images/phone.png" alt="programer" style="max-width: 40%">
+            <p class="fw-bold">movil apps</p>
+            <p class="fw-normal">psychology app, created with flutter and firebase</p>
+            <button type="button" class="btn btn-labeled btn-danger"  style="margin: 10px">
+                <a style="color: white; text-decoration: none;" href="https://play.google.com/store/apps/details?id=com.nicafreelance.psicologo_martinez&pli=1"> <span  class="btn-label"><i class="fa fa-info-circle"></i> </span> Read more</a>    
+            </button>
         </div>
-        <div class="col-sm-2" style="padding-top:50px">
-            <img class="img-fluid" src="images/corazon.png" alt="programer" style="max-width: 50%">
-            <p class="fw-bold">creative ideas</p>
-            <p class="fw-normal">latest design trends.</p>
+        <div id="vidrio" class="col-sm-3" style="padding-top:50px">
+            <img class="img-fluid" src="images/corazon.png" alt="programer" style="max-width: 25%">
+            <p class="fw-bold">Social Media</p>
+            <p class="fw-normal">content design for social networks, post, covers and more.</p>
+            <button type="button" class="btn btn-labeled btn-danger"  style="margin: 10px">
+                <a style="color: white; text-decoration: none;" href="gallery.html"> <span  class="btn-label"><i class="fa fa-info-circle"></i> </span> view</a>    
+            </button>
         </div>
-        <div class="col-sm-2">
-            <img class="img-fluid" src="images/google.png" alt="programer" style="max-width: 50%">
+        <div  id="vidrio" class="col-sm-3">
+            <img class="img-fluid" src="images/google.png" alt="programer" style="max-width: 20%">
             <p class="fw-bold">creative ideas</p>
             <p class="fw-normal">latest design trends.</p>
 
-        </div>
-        <div class="col-sm-6">
-         <div class="glass" style="height: 200px;">
-            <lottie-player
-                    src="https://assets3.lottiefiles.com/private_files/lf30_pkibk91l.json"
-                    background="transparent"
-                    speed="0.5"
-                    style="width: 100%; height: 270px;"
-                    loop
-                    autoplay
-                  ></lottie-player>  
-         </div>
         </div>
         </div>
 
     </section>
     
-    <section id="sec3" style="background-color: orangered">
-        <h1>Coming Soon</h1>
+    <section id="sec3" style="padding-top: 100px;">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-7">
+                <div class="col-sm-7" id="vidrio">
                     <lottie-player
                     src="https://assets5.lottiefiles.com/packages/lf20_cctgy7u6.json"
                     background="transparent"
